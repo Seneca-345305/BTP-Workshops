@@ -1,0 +1,71 @@
+Command Line: w8.exe Descriptions.dat BadPrices.dat Prices.dat
+
+ Code Description
+ 4662    tomatoes
+ 4039   cucumbers
+ 4056     brocoli
+ 4067      lemons
+ 4068     oranges
+
+********************************************
+* Good Prices
+********************************************
+ Code   Price
+ 4067    0.99
+ 4068    0.67
+ 4039    1.99
+ 4056    2.49
+
+********************************************
+* Bad Prices
+********************************************
+ Code   Price
+ 4067    0.99
+ 4068    0.67
+ 4039    1.99
+ 4056   -2.49
+
+********************************************
+* Merging bad prices using Raw Pointers
+********************************************
+     C [1]
+    CC [2] from [1]
+    ~D [1]
+     C [3]
+    ~D [2]
+ERROR: *** Negative prices are invalid ***
+NOTE: An exception occurred while creating the list of products!
+      You should notice that not all objects are deleted.
+
+********************************************
+* Merging bad prices using Smart Pointers
+********************************************
+     C [4]
+    CC [5] from [4]
+    ~D [4]
+     C [6]
+    ~D [6]
+    ~D [5]
+ERROR: *** Negative prices are invalid ***
+NOTE: An exception occurred while creating the list of products!
+      You should notice that ALL objects are deleted.
+
+
+********************************************
+* Merging good prices using Raw Pointers
+********************************************
+ Description   Price
+   cucumbers    1.99
+     brocoli    2.49
+      lemons    0.99
+     oranges    0.67
+
+********************************************
+* Merging good prices using Smart Pointers
+********************************************
+ Description   Price
+   cucumbers    1.99
+     brocoli    2.49
+      lemons    0.99
+     oranges    0.67
+
