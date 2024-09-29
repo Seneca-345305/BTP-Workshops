@@ -220,17 +220,17 @@ Template parameters:
 - `Archer(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t weapon)`: initializes a new object to the values received as parameters.
 - `int getAttackAmnt() const`: returns the damage that character can do in an attack, using the formula:
 
-  $$
+  ```math
   1.3 \times BASE\_ATTACK
-  $$
+  ```
 
   In this implementation the weapon is ignored.
 
 - `int getDefenseAmnt() const`: return the defense of this archer, using the formula:
 
-  $$
+  ```math
   1.2 \times BASE\_DEFENSE
-  $$
+  ```
 
 - `Character* clone() const`: dynamically creates a copy of the current instance and returns its address to the client.
 - `void attack(Character* enemy)`: attacks the enemy received as parameter and inflicts damage to it.
@@ -289,9 +289,9 @@ Template parameters:
 - `Rogue(const char* name, int healthMax, int baseAttack, int baseDefense)`: initializes a new object to the values received as parameters.
 - `int getAttackAmnt() const`: returns the damage that character can do in an attack, using the formula:
 
-  $$
+  ```math
   BASE\_ATTACK + 2 \times WEAPON\_DAMAGE
-  $$
+  ```
 
   Use the conversion to `double` operator from class `seneca::Dagger` to find out how much damage the dagger can do; this operator can be used with `static_cast`.
 - `int getDefenseAmnt() const`: return the base defense value.
