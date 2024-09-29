@@ -157,9 +157,9 @@ Template parameters:
 - `Barbarian(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t primaryWeapon, Weapon_t secondaryWeapon)`: initializes a new object to the values received as parameters.
 - `int getAttackAmnt() const`: returns the damage that character can do in an attack, using the formula:
 
-  $$
+  ```math
   BASE\_ATTACK + \frac{WEAPON_1\_DAMAGE}{2} + \frac{WEAPON_2\_DAMAGE}{2}
-  $$
+  ```
 
   In this design, it is assumed that `Weapon_t` template type supports conversion to `double` operator that will return the damage the weapon can do; this operator can be used with `static_cast`.
 - `int getDefenseAmnt() const`: return the base defense value.
