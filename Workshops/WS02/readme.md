@@ -168,7 +168,7 @@ Template parameters:
   - print:
 
     ```txt
-    [NAME] is attacking [ENEMY_NAME].<endl>"
+    [NAME] is attacking [ENEMY_NAME].<endl>
     ```
 
   - use the special ability to activate any beneficial effects on self. **In this design, it is assumed that the type `Ability_t` has a member function named `useAbility(Character*)`** that will activate the special ability; call this function on `m_ability` member and pass the address of the current instance as a parameter.
@@ -189,7 +189,7 @@ Template parameters:
 
     ```txt
     [NAME] is attacked for [DAMAGE] damage.<endl>
-		    Barbarian has a defense of [DEFENSE]. Reducing damage received.<endl>";
+        Barbarian has a defense of [DEFENSE]. Reducing damage received.<endl>
     ```
   
   - the barbarian is able to block some of the damage: subtract the defense amount from the parameter. The new value cannot be less than 0.
@@ -237,7 +237,7 @@ Template parameters:
   - print:
 
     ```txt
-    [NAME] is attacking [ENEMY_NAME].<endl>"
+    [NAME] is attacking [ENEMY_NAME].<endl>
     ```
 
   - retrieve the damage this character can do using the function `getAttackAmnt`.
@@ -255,7 +255,7 @@ Template parameters:
 
     ```txt
     [NAME] is attacked for [DAMAGE] damage.<endl>
-		    Archer has a defense of [DEFENSE]. Reducing damage received.<endl>";
+        Archer has a defense of [DEFENSE]. Reducing damage received.<endl>
     ```
   
   - the archer is able to block some of the damage: subtract the defense amount from the parameter. The new value cannot be less than 0.
@@ -300,7 +300,7 @@ Template parameters:
   - print:
 
     ```txt
-    [NAME] is attacking [ENEMY_NAME].<endl>"
+    [NAME] is attacking [ENEMY_NAME].<endl>
     ```
 
   - use the first special ability to activate any beneficial effects on self. **In this design, it is assumed that the type `FirstAbility_t` has a member function named `useAbility(Character*)`** that will activate the special ability; call this function on `m_firstAbility` member and pass the address of the current instance as a parameter.
@@ -323,7 +323,7 @@ Template parameters:
 
     ```txt
     [NAME] is attacked for [DAMAGE] damage.<endl>
-		    Rogue has a defense of [DEFENSE]. Reducing damage received.<endl>";
+        Rogue has a defense of [DEFENSE]. Reducing damage received.<endl>
     ```
   
   - the rogue is able to block some of the damage: subtract the defense amount from the parameter. The new value cannot be less than 0.
@@ -352,9 +352,9 @@ The `Team` is in **composition** relation with `Character`.
 
   ```txt
   [Team] TEAM_NAME<endl>
-	    1: FIRST_CHARACTER<endl>
-	    2: SECOND_CHARACTER<endl>
-	    3: THIRD_CHARACTER<endl>
+      1: FIRST_CHARACTER<endl>
+      2: SECOND_CHARACTER<endl>
+      3: THIRD_CHARACTER<endl>
       ...
   ```
   
@@ -380,9 +380,9 @@ The `Guild` is in **aggregation** relation with `Character`. All guild members r
 
   ```txt
   [Guild] GUILD_NAME<endl>
-	    1: FIRST_CHARACTER<endl>
-	    2: SECOND_CHARACTER<endl>
-	    3: THIRD_CHARACTER<endl>
+      1: FIRST_CHARACTER<endl>
+      2: SECOND_CHARACTER<endl>
+      3: THIRD_CHARACTER<endl>
       ...
   ```
   
