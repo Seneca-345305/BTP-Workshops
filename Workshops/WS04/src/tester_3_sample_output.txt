@@ -1,4 +1,4 @@
-Command Line: ms3 Stations1.txt Stations2.txt CustomerOrders.txt AssemblyLine.txt
+Command Line: ws_tester_3 Stations1.txt Stations2.txt CustomerOrders.txt AssemblyLine.txt
 
 ========================================
 =         Stations (summary)           =

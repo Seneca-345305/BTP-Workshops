@@ -1,4 +1,4 @@
-Command Line: ms2 Stations1.txt Stations2.txt CustomerOrders.txt
+Command Line: ws_tester_2 Stations1.txt Stations2.txt CustomerOrders.txt
 
 ========================================
 =         Stations (summary)           =
